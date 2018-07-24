@@ -1,0 +1,19 @@
+.divBack {
+    background-image: url('../../images/tech.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+.divBack h1 {
+    font-size: 45px;
+    font-weight: 500;
+    z-index: 1;
+    margin-top: 111px;
+}
