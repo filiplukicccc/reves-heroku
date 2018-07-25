@@ -2,9 +2,19 @@
   font-size: 130px !important;
   font-weight: 900 !important;
   letter-spacing: 17px;
-  transform: skewY(-10deg); }
+  transform: skewY(-11deg);
+  text-shadow: 4px -2px 10px rgba(150, 150, 150, 0.9);
+  color: white;
+  margin: 0px; }
 
 .rotated div {
   font-size: 50px !important;
   margin-top: -70px;
   letter-spacing: 8px; }
+
+@media only screen and (max-width: 768px) {
+  .rotated {
+    font-size: 80px !important; }
+  .rotated div {
+    font-size: 35px !important;
+    margin-top: -40px; } }

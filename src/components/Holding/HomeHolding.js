@@ -15,6 +15,8 @@ import "slick-carousel/slick/slick-theme.css";
 import AboutHolding from './AboutHolding';
 import Counter from './Counter';
 import Managment from './Managment';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 
 class HomeHolding extends Component {
@@ -35,13 +37,23 @@ class HomeHolding extends Component {
 		return (
 			<div>
 				{/* <Sidebar /> */}
+
 				<NavbarHol />
-				<div className='videoDiv'>
-					<div className='shadowDiv'><h1>OUR SECRET OF SUCCESS IS <br /><span>ENTHUSIASM</span></h1></div>
-					<video className='videoCover' autoPlay loop src={movie}>
-					</video>
-				</div>
-				<Grid centered>
+				<Grid>
+					<GridRow centered>
+						<GridColumn width={16}>
+							<div style={{ position: 'fixed', width: '100%' }}>
+								<div className='videoDiv'>
+									<div className='shadowDiv'><h1>OUR SECRET OF SUCCESS IS <br /><span>ENTHUSIASM</span></h1></div>
+									<video className='videoCover' autoPlay loop src={movie}>
+									</video>
+									<div></div>
+								</div>
+							</div>
+						</GridColumn>
+					</GridRow>
+				</Grid>
+				<Grid centered style={{ marginTop: '700px', position: 'relative', background: 'white' }}>
 					<h2>IT’S THE FUEL THAT KEEPS OUR BUSINESSES AFLOAT.</h2>
 					<GridRow centered className='homeText'>
 						<GridColumn computer={5} tablet={7} mobile={14}>
@@ -56,25 +68,25 @@ class HomeHolding extends Component {
 						</GridColumn>
 					</GridRow>
 					<GridRow centered>
-						<GridColumn textAlign='center' className='flatDiv' computer={3} tablet={7} mobile={14}>
+						<GridColumn textAlign='center' className='flatDiv' computer={3} tablet={7} mobile={12}>
 							<div className='flatBack'>
 								<img src={finance} />
 								<h3>FINANCE</h3>
 							</div>
 						</GridColumn>
-						<GridColumn className='flatDiv' textAlign='center' computer={3} tablet={7} mobile={14}>
+						<GridColumn className='flatDiv' textAlign='center' computer={3} tablet={7} mobile={12}>
 							<div className='flatBack'>
 								<img src={commerce} />
 								<h3>COMMERCE</h3>
 							</div>
 						</GridColumn>
-						<GridColumn className='flatDiv' textAlign='center' computer={3} tablet={7} mobile={14}>
+						<GridColumn className='flatDiv' textAlign='center' computer={3} tablet={7} mobile={12}>
 							<div className='flatBack'>
 								<img src={cogwheel} />
 								<h3>SOFTWARE DEVELOPMENT</h3>
 							</div>
 						</GridColumn>
-						<GridColumn className='flatDiv' textAlign='center' computer={3} tablet={7} mobile={14}>
+						<GridColumn className='flatDiv' textAlign='center' computer={3} tablet={7} mobile={12}>
 							<div className='flatBack'>
 								<img src={house} />
 								<h3>REAL ESTATE</h3>
@@ -83,7 +95,7 @@ class HomeHolding extends Component {
 					</GridRow>
 					<h2 className='partnersH2'>WHAT OUR PARTNERS SAY ABOUT US</h2>
 					<GridRow style={{ marginBottom: '65px' }} centered>
-						<GridColumn computer={8}>
+						<GridColumn computer={8} mobile={12}>
 							<div style={{ textAlign: 'center' }}>
 								<Slider {...settings}>
 									<div>
@@ -106,6 +118,8 @@ class HomeHolding extends Component {
 					<AboutHolding />
 					<Counter />
 					<Managment />
+					<Portfolio />
+					<Contact />
 				</Grid>
 				<Footer />
 

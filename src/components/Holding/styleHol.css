@@ -17,6 +17,21 @@ h2 {
 		font-family: 'Roboto', sans-serif!important;
 		margin-top: 90px!important;
 }
+h3 {
+    font-weight: 400!important;
+    font-family: 'Roboto', sans-serif!important;
+    /* color: #003571; */
+}
+h4 {
+    font-weight: 300!important;
+    font-family: 'Roboto', sans-serif!important;
+}
+.employersH4 {
+    color: #0751a9;
+}
+.employers {
+    color: #003571;
+}
 p {
     color: #b0b0b0;
     font-size: 15px;
@@ -61,4 +76,38 @@ p {
 .slick-arrow {
     right: -85px!important;
 }
+.counterGrid p:nth-of-type(1) {
+    color: white;
+    font-size: 45px;
+}
+.counterGrid p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
+
+@media only screen and (max-width: 768px) {
+    .shadowDiv h1  {
+        font-size: 30px;
+    }
+    .shadowDiv h1 span {
+        font-size: 43px;
+        margin-top: 18px;
+    }
+    h2 {
+		font-size: 25px!important;
+		margin-top: 50px!important;
+    }
+    .slick-prev {
+        left: -45px!important;
+    }
+    .slick-arrow {
+        right: -25px!important;
+    }
+    .counterGrid p:nth-of-type(1) {
+        font-size: 25px;
+    }
+    .counterGrid p {
+        font-size: 15px;
+    }
+}
