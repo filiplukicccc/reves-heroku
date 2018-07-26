@@ -5,7 +5,12 @@ class Portfolio extends Component {
 	render() {
 		return (
 			<div>
-				<h2 style={{marginBottom:'75px'}}>INVESTMENT PORTFOLIO</h2>
+				<h2 style={{ marginBottom: '25px' }}>INVESTMENT PORTFOLIO</h2>
+				<div style={{ textAlign: 'center',display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '50px' }}>
+					<span className='border'></span>
+					<span style={{ width: '8px', height: '8px', background: '#003571', display: 'inline-block', borderRadius: '50%', margin: '0 20px' }}></span>
+					<span className='border'></span>
+				</div>
 				<Grid>
 					<GridRow centered>
 						<GridColumn computer={12} tablet={7} mobile={14}>

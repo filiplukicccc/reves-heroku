@@ -6,7 +6,12 @@ class Managment extends Component {
 	render() {
 		return (
 			<div style={{ marginBottom: '75px', width: '100%' }}>
-				<h2 style={{ marginBottom: '50px' }}>MANAGMENT</h2>
+				<h2 style={{ marginBottom: '25px' }}>MANAGMENT</h2>
+				<div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '50px' }}>
+					<span className='border'></span>
+					<span style={{ width: '8px', height: '8px', background: '#003571', display: 'inline-block', borderRadius: '50%', margin: '0 20px' }}></span>
+					<span className='border'></span>
+				</div>
 				<Grid style={{ width: '100%' }}>
 					<GridRow centered>
 						<GridColumn computer={4} mobile={14}>

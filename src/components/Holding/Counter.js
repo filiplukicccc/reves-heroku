@@ -14,8 +14,8 @@ class Counter extends Component {
 				{/* <div style={{ width: '100%', height: '100%', background: 'rgba(0,0,0,0.85)' }}> */}
 				<Parallax bgImage={image} strength={-300} >
 					<div style={{ height: '300px' }}>
-						<div style={{ width: '100%', height: '100%', background: 'rgba(0,0,0,0.80)', position: 'absolute', top: '0px', left: '0px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-							<TrackVisibility  throttleInterval={300} style={{width:'100%'}}>
+						<div style={{ width: '100%', height: '100%', background: 'rgba(0,0,0,0.90)', position: 'absolute', top: '0px', left: '0px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+							<TrackVisibility throttleInterval={300} style={{ width: '100%' }}>
 								{
 									({ isVisible }) => isVisible ?
 										<Grid className='counterGrid' style={{ width: '100%', zIndex: '2', color: 'white' }}>
