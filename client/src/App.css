@@ -1,0 +1,244 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.ball-rotate {
+  position: relative; }
+  .ball-rotate > div {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 2px;
+    animation-fill-mode: both;
+    position: relative; }
+    .ball-rotate > div:first-child {
+      animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite; }
+    .ball-rotate > div:before, .ball-rotate > div:after {
+      background-color: #fff;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      margin: 2px;
+      content: "";
+      position: absolute;
+      opacity: 0.8; }
+    .ball-rotate > div:before {
+      top: 0px;
+      left: -28px; }
+    .ball-rotate > div:after {
+      top: 0px;
+      left: 25px; }
+
+.rotated {
+  font-size: 130px !important;
+  font-weight: 900 !important;
+  letter-spacing: 17px;
+  transform: skewY(-11deg);
+  text-shadow: 4px -2px 10px rgba(150, 150, 150, 0.9);
+  color: white;
+  margin: 0px; }
+
+.rotated div {
+  font-size: 50px !important;
+  margin-top: -70px;
+  letter-spacing: 8px; }
+
+.iconDiv {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #003571;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 32px;
+  transition: 0.5s; }
+
+.iconDiv:hover {
+  background: white;
+  animation: roll 3s infinite;
+  transform: rotate(360deg); }
+  .iconDiv:hover .icon {
+    color: #161e25; }
+
+.iconGrey {
+  font-family: Icons !important;
+  color: #161e25;
+  margin-bottom: 20px !important; }
+
+.iconGreyDiv {
+  height: 100px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  transition: 0.5s;
+  text-align: center; }
+
+.iconGreyDiv p {
+  color: #003571; }
+
+.teamDiv {
+  overflow: hidden;
+  width: 273px;
+  height: 410px;
+  position: relative;
+  margin: 0 auto; }
+
+.teamImg {
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.teamImgHover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  width: 275px;
+  height: 413px;
+  display: none;
+  animation: fadeIn 0.5s ease-in both; }
+
+.teamDiv:hover .teamImgHover {
+  display: block; }
+
+.teamDiv:hover .hoverDiv {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.hoverDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  transition-duration: 0.8s;
+  border-top: 1px solid #003571;
+  border-left: 1px solid #003571;
+  border-bottom: 1px solid #003571; }
+
+.hoverDivSec {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 53, 113, 0.55); }
+
+.name {
+  text-align: center;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+  clear: both;
+  padding-top: 20px;
+  font-weight: 100 !important; }
+
+.profession {
+  text-align: center;
+  color: #003571;
+  font-size: 15px; }
+
+.container {
+  width: 1220px;
+  margin: 90px auto 45px auto;
+  overflow: auto;
+  min-height: 486px; }
+
+.inCon {
+  width: 100%;
+  visibility: visible;
+  display: block;
+  z-index: 1;
+  position: relative;
+  float: left; }
+
+.wrap {
+  position: relative;
+  overflow: hidden;
+  visibility: visible; }
+
+.inWrap {
+  transform: translate3d(0px, 0px, 0px);
+  transition: 0s;
+  width: 2835px;
+  position: relative;
+  transition: 0.8s; }
+
+.pic {
+  min-height: 1px;
+  float: left;
+  position: relative; }
+
+.inPic {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.mem {
+  transform: translateY(0);
+  background-size: cover;
+  width: 275px;
+  height: 413px;
+  -webkit-box-shadow: -1px -2px 10px 2px rgba(0, 53, 113, 0.68);
+  -moz-box-shadow: -1px -2px 10px 2px rgba(0, 53, 113, 0.68);
+  box-shadow: -1px -2px 10px 2px rgba(0, 53, 113, 0.68); }
+
+.inPic:hover .hoverDiv {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.inPic:hover .teamImgHover {
+  display: block; }
+
+.arrows {
+  font-family: none !important; }
+
+.buttons, .buttons1, .buttons2, .buttons3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.buttons1, .buttons2, .buttons3 {
+  display: none; }
+
+.icon1 {
+  color: #003571; }
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 915px; }
+  .buttons, .buttons2, .buttons3 {
+    display: none; }
+  .buttons1 {
+    display: flex; } }
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 610px; }
+  .buttons, .buttons1, .buttons3 {
+    display: none; }
+  .buttons2 {
+    display: flex; } }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 305px; }
+  .buttons, .buttons1, .buttons2 {
+    display: none; }
+  .buttons3 {
+    display: flex; }
+  .rotated {
+    font-size: 80px !important; }
+  .rotated div {
+    font-size: 35px !important;
+    margin-top: -40px; } }

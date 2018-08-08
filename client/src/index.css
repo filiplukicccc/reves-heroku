@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Helvetica Neue'),
+    url(./components/Fonts/HelveticaNeue.ttf) format('truetype');
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500');
+body {
+  margin: 0;
+  padding: 0;
+}
+body *  {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial , sans-serif!important;
+}
+a {
+  color: #b0b0b0!important;
+}
+.navbarDiv {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 100;
+  border-bottom: 1px solid #003571;
+}
+/* .menuItem .item, .menuItem a {
+  color: #b0b0b0!important;
+} */
+
+a .active.item  {
+  color: #003571!important;
+}
+.item {
+  font-weight: 600!important;
+}
+.link {
+  color: #003571!important;
+  border-bottom: 2px solid #003571!important;
+}
+.menuItem {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial , sans-serif!important;
+}
+.navbarLogoDiv {
+  padding-left: 100px;
+}
+.navbarLogoDiv img {
+  width: 250px;
+}
+.active.item  {
+  border-color: #003571!important;
+}
+.videoDiv {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.videoCover {
+  position: absolute;
+  bottom: -170px;
+}
+.shadowDiv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background:  rgba(0,53,113,0.54);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shadowDiv h1 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  font-weight: 100;
+  padding-top: 111px;
+}
+.burger {
+  position: absolute;
+  top: 24px;
+  right: 10px;
+  display: none;
+}
+.menuRes {
+  display: none!important;
+}
+.border {
+  border-bottom: 1px solid rgba(0,0,0,.57);
+  display: inline-block;
+  width: 15%;
+}
+.conUsAfr {
+  margin-top: 90px!important;
+}
+
+@media only screen and (max-width: 1300px) {
+  .menuItem {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbarDiv {
+    display: block;
+  }
+  .active.item  {
+    border-bottom: none!important;
+  }
+  .navbarLogoDiv {
+    padding-left: 10px;
+  }
+  .navbarLogoDiv img {
+    width: 190px;
+  }
+  .burger {
+    display: block;
+  }
+  .menuStandard {
+    display: none;
+  }
+}
