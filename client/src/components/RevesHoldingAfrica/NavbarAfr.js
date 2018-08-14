@@ -6,7 +6,7 @@ import logoHol from '../../images/REVES_HOLDING.png';
 import logoTech from '../../images/REVES_TECHNOLOGIES.png';
 import HamburgerMenu from 'react-hamburger-menu';
 import '../../index.css';
-import styles from '../../index.css';
+import './styleAfr.css';
 
 
 class Navbar extends Component {
@@ -48,8 +48,8 @@ class Navbar extends Component {
 		return (
 			<div>
 				<div className='navbarDiv'>
-					<div className='navbarLogoDiv' style={{ paddingTop: '6px' }}><img style={{height:'90px'}} src={log} />
-						<div className='burger'>
+					<div className='navbarLogoDiv' style={{ paddingTop: '6px' }}><img src={log} />
+						<div className='burger burgerAfr'>
 							<HamburgerMenu
 								isOpen={this.state.open}
 								menuClicked={this.handleClick.bind(this)}
@@ -76,13 +76,13 @@ class Navbar extends Component {
 					</div>
 					<Transition visible={visible} animation='slide down' duration={650}>
 						<div className='menuRes'>
-							<Menu className='menuItem' stackable pointing secondary size='large' style={{ borderBottom: 'none' }} >
+							<Menu className='menuItem' stackable pointing secondary size='large' style={{ borderBottom: 'none'}} >
 								<Link to='/#home'><Menu.Item name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick}>Home</Menu.Item></Link>
 								<Link to='/#about'><Menu.Item name='About' active={activeItem === 'About'} onClick={this.handleItemClick}>About</Menu.Item></Link>
 								<Link to='/#managment'><Menu.Item name='Managment' active={activeItem === 'Managment'} onClick={this.handleItemClick}>Managment</Menu.Item></Link>
 								<Link to='/reves_technologies'><Menu.Item name='Reves_technologies' active={activeItem === 'Reves_technologies'} onClick={this.handleItemClick}>Reves Technologies</Menu.Item></Link>
-								<Link to='/reves_holding'><Menu.Item className={this.state.class} name='Reves_holding' active={activeItem === 'Reves_holding'} onClick={this.border}>Reves Holding</Menu.Item></Link>
-								<Link to='/reves_holdings_africa'><Menu.Item name='Reves_holdings_africa' active={activeItem === 'Reves_holdings_africa'} onClick={this.handleItemClick}>Reves Holding Africa</Menu.Item></Link>
+								<Link to='/reves_holding'><Menu.Item name='Reves_holding' active={activeItem === 'Reves_holding'} onClick={this.border}>Reves Holding</Menu.Item></Link>
+								<Link to='/reves_holdings_africa'><Menu.Item className={this.state.class} name='Reves_holdings_africa' active={activeItem === 'Reves_holdings_africa'} onClick={this.handleItemClick}>Reves Holding Africa</Menu.Item></Link>
 								<Link to='/#contact'><Menu.Item name='Contact' active={activeItem === 'Contact'} onClick={this.handleItemClick}>Contact</Menu.Item></Link>
 							</Menu>
 						</div>

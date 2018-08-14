@@ -80,7 +80,8 @@
   align-items: center;
   font-size: 32px;
   transition: 0.5s;
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px; }
 
 .iconGreyDiv p {
   color: #003571; }

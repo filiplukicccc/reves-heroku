@@ -48,7 +48,7 @@ class Navbar extends Component {
 		return (
 			<div>
 				<div className='navbarDiv'>
-					<div className='navbarLogoDiv' style={{ paddingTop: '20px' }}><img style={{height:'90px'}} src={log} />
+					<div className='navbarLogoDiv' style={{ paddingTop: '20px' }}><img src={log} />
 						<div className='burger'>
 							<HamburgerMenu
 								isOpen={this.state.open}

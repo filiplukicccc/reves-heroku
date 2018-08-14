@@ -15,15 +15,14 @@ class About extends Component {
 				<Grid style={{ margin: '0px' }}>
 					<GridRow centered>
 						<GridColumn computer={6} tablet={7} mobile={14}>
-							<div >
+							<div>
 								<h3 style={{ color: '#003571' }}><span style={{ height: '20px', background: '#003571', display: 'inline-block', width: '2px' }}></span> Lorem ipsum</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique cursus felis sit amet tempor. Sed vel ullamcorper leo, quis varius orci. Sed venenatis finibus purus, sed maximus nisl convallis vitae. In lacinia ornare tempus. Vivamus in mi ut nibh sodales fermentum. Nulla a dolor magna. </p>
 							</div>
 						</GridColumn>
 						<GridColumn computer={6} tablet={7} mobile={14}>
-
-							<div >
-								<h3 style={{ color: '#003571' }}><span style={{ height: '20px', background: '#003571', display: 'inline-block', width: '2px' }}></span> Lorem ipsum</h3>
+							<div>
+								<h3 className='aboutH3' style={{ color: '#003571' }}><span style={{ height: '20px', background: '#003571', display: 'inline-block', width: '2px' }}></span> Lorem ipsum</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique cursus felis sit amet tempor. Sed vel ullamcorper leo, quis varius orci. Sed venenatis finibus purus, sed maximus nisl convallis vitae. In lacinia ornare tempus. Vivamus in mi ut nibh sodales fermentum. Nulla a dolor magna. </p>
 							</div>
 						</GridColumn>

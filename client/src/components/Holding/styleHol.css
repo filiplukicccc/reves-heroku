@@ -129,6 +129,9 @@ p {
     .shadowDiv h1  {
         font-size: 30px;
     }
+    .imgHol {
+        margin-top: 30px!important;
+    }
     .shadowDiv h1 span {
         font-size: 43px;
         margin-top: 18px;
@@ -153,4 +156,7 @@ p {
         justify-content: left!important;
         margin-bottom: 30px;
     }
+    .conUs {
+        margin-top: 40px!important;
+      }
 }

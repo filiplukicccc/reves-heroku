@@ -4,6 +4,7 @@ import { Grid, GridRow, GridColumn } from 'semantic-ui-react';
 import { fadeInLeft, fadeInRight, zoomIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import TrackVisibility from 'react-on-screen';
+import './styleAfr.css';
 
 const styles = {
 	fadeInLeft: {
@@ -70,7 +71,7 @@ class AboutTechnologies extends Component {
 									({ isVisible }) => isVisible ?
 										<StyleRoot>
 											<div style={styles.fadeInRight}>
-												<h3 style={{ color: '#003571' }}><span style={{ height: '20px', background: '#003571', display: 'inline-block', width: '2px' }}></span> VIEBEG Medical and Dental Supplies Ltd. </h3>
+												<h3 className='viebegMed' style={{ color: '#003571' }}><span style={{ height: '20px', background: '#003571', display: 'inline-block', width: '2px' }}></span> VIEBEG Medical and Dental Supplies Ltd. </h3>
 												<p>VIEBEG Medical and Dental Supplies Ltd. is a leading medical supplies and equipment provider in East Africa. We offer high quality medical and dental supplies and equipment at the most attractive prices. VIEBEG was founded on the principles of quality, value and service. Our mission is to bring convenience to our clients through innovation, efficient service delivery, competence and flexibility. We are dedicated to ensuring that our clients’ needs are met with the highest level of satisfaction.<br /><br />
 													Our long-term goals are to help companies realising their growth potential by providing them with outstanding operational support. We are striving to make each customer experience with our business one that exceeds their expectations and brings value to their business. VIEBEG Medical and Dental Supplies Ltd. has over 15 years combined experience servicing the Pharmaceutical and Diagnostic sectors throughout Central and East Africa. Our sales representatives are fully up to date and knowledgeable about the fields we support. All our sales representatives attend regular training with our key suppliers ensuring they have the knowledge to support our customers.  </p>
 											</div>

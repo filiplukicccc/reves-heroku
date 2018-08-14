@@ -31,7 +31,7 @@ class Home extends Component {
 									window.location.href === 'http://localhost:3000/#contact' ? <NavbarContact /> : <NavbarHome />
 						}
 					</ScrollableAnchor>
-					<div>
+					<div className='res'>
 						<Grid>
 							<GridRow centered>
 								<GridColumn width={16}>

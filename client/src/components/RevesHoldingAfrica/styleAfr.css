@@ -84,4 +84,20 @@ import pic3 from '../../images/count.jpg'; */
 
 
 
+@media only screen and (max-width: 768px) {
+    .viebegMed {
+        margin-top: 30px!important;
+    }
+    .imgHol {
+        margin-top: 30px!important;
+    }
+    .managment {
+        margin-top: 0px!important;
+    }
+    .burgerAfr {
+        top:10px;
+    }
+}
+
+
 

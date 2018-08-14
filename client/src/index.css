@@ -48,7 +48,7 @@ a .active.item  {
   padding-left: 100px;
 }
 .navbarLogoDiv img {
-  width: 250px;
+  height: 80px;
 }
 .active.item  {
   border-color: #003571!important;
@@ -99,7 +99,12 @@ a .active.item  {
 .conUsAfr {
   margin-top: 90px!important;
 }
-
+.managmentWrap {
+  padding-top: 70px;
+}
+.managmentWrap h2 {
+  margin-top: 0px!important;
+}
 @media only screen and (max-width: 1300px) {
   .menuItem {
     display: flex;
@@ -115,12 +120,35 @@ a .active.item  {
     padding-left: 10px;
   }
   .navbarLogoDiv img {
-    width: 190px;
+   height: 50px;
   }
   .burger {
     display: block;
   }
   .menuStandard {
     display: none;
+  }
+  .link {
+    color: #003571!important;
+    border-bottom: none!important;
+  }
+  .managmentWrap {
+    padding-top: 5px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .person {
+    margin-top: 40px!important;
+  }
+  .conUsAfr {
+    margin-top: 0px!important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .link {
+    border-bottom: none!important;
+  }
+  .aboutH3 {
+    margin-top: 20px!important;
   }
 }
