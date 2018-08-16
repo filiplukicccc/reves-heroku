@@ -3,7 +3,9 @@ import { Grid, GridRow, GridColumn, Image } from 'semantic-ui-react'
 import david from '../images/daav.jpg'
 import tobi from '../images/tobi.jpg'
 import gabriel from '../images/gabriel.png'
-import dejana from '../images/dejana.jpg'
+import dejana from '../images/dejana.png'
+import tobias from '../images/ytdjt.png'
+
 
 class Managment extends Component {
 	render() {
@@ -18,7 +20,7 @@ class Managment extends Component {
 				<Grid style={{ width: '100%' }}>
 					<GridRow centered>
 						<GridColumn className='person' computer={4} mobile={13}>
-							<Image style={{ width: '280px', margin: '0 auto' }} src={tobi} circular></Image>
+							<Image style={{ width: '280px', margin: '0 auto' }} src={tobias} circular></Image>
 							<h3 className='employers'>Tobias Reiter, MSc.</h3>
 							<h4 className='employersH4'>Founder and Chairman</h4>
 							<p>While studying International Business Administration at Vienna University of Economics and Business, Tobias developed an arbitrage alert service. His academic experience in St. Petersburg, Russia, at the Graduate School of Management and at the University of Groningen in the Netherlands, where Tobias earned a Master‘s degree in International Business and Management, has enabled him to build an international business network. Tobias Reiter’s work experience in Africa, the U.S. and Asia as well as his various entrepreneurial activities allowed him to acquire experience in a number of different industries. </p>
