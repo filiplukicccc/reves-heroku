@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, GridRow, GridColumn, Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import { flipInX, slideInRight } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import TrackVisibility from 'react-on-screen';

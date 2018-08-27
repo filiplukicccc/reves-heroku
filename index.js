@@ -6,10 +6,6 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-// app.get('/api/form', function (req, res) {
-// 	res.json('');
-// })
-
 app.post('/api/form', (req, res) => {
 	nodemailer.createTestAccount((err, account) => {
 		const htmlEmail = `
@@ -47,7 +43,7 @@ app.post('/api/form', (req, res) => {
 
 			res.json('Email sent successfully!');
 
-			console.log('Message sent:', info.messageId);
+			console.log('Message sent:');
 		})
 	})
 })
@@ -88,7 +84,7 @@ app.post('/api/techForm', (req, res) => {
 
 			res.json('Email sent successfully!');
 
-			console.log('Message sent:', info.messageId);
+			console.log('Message sent:');
 		})
 	})
 })
@@ -130,7 +126,7 @@ app.post('/api/groupForm', (req, res) => {
 
 			res.json('Email sent successfully!');
 
-			console.log('Message sent:', info.messageId);
+			console.log('Message sent:');
 		})
 	})
 })
@@ -172,7 +168,7 @@ app.post('/api/afrForm', (req, res) => {
 
 			res.json('Email sent successfully!');
 
-			console.log('Message sent:', info.messageId);
+			console.log('Message sent:');
 		})
 	})
 })

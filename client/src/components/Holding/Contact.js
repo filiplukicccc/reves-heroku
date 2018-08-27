@@ -16,7 +16,7 @@ class Contact extends Component {
       loader: 'none'
     }
   }
-  
+
 
   handleChange = (e) => {
     this.setState({
@@ -55,7 +55,7 @@ class Contact extends Component {
     }
     else {
       this.setState({
-        serverMessage: 'Fill out all field correctlly!'
+        serverMessage: 'Fill out all fields correctlly!'
       })
     }
   }
@@ -72,8 +72,8 @@ class Contact extends Component {
 
 
   render() {
-    console.log('this.state :', this.state);
     const { name, email, subject, message } = this.state
+    console.log('this.props :', this.props);
     return (
       <div style={{ width: '100%' }}>
         <h2 style={{ marginBottom: '25px' }}>CONTACT</h2>
@@ -118,7 +118,7 @@ class Contact extends Component {
                     onChange={this.handleChange}
                   />
                   <div style={{ display: `${this.state.loader}` }}>
-                    <Dimmer active style={{background:'rgba(0,0,0,0.25)',borderRadius:'5px'}}>
+                    <Dimmer active style={{ background: 'rgba(0,0,0,0.25)', borderRadius: '5px' }}>
                       <Loader size='big'>Loading</Loader>
                     </Dimmer>
                   </div>
@@ -141,9 +141,9 @@ class Contact extends Component {
                 <GridRow className='branch' centered>
                   <GridColumn computer={8} >
                     <div style={{ textAlign: 'left' }}>
-                      <h3 style={{ color: 'rgb(0, 53, 113)', textAlign: 'center', marginBottom: '60px' }}>BRANCH OFFICE</h3>
-                      <p>Praska 36/8<br />
-                        11131 Beograd (Čukarica)<br />
+                      <h3 style={{ color: 'rgb(0, 53, 113)', textAlign: 'center', marginBottom: '60px' }}>OFFICE</h3>
+                      <p>Beogradska 114a<br />
+                        11277 Belgrade (Ugrinovci)<br />
                         Serbia</p>
                       <p>
                         Mail: office@reves-holding.com<br />

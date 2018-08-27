@@ -1,6 +1,4 @@
 import React from 'react';
-import SidebarHol from './Sidebar';
-import Footer from './Footer';
 import { Grid, GridRow, GridColumn } from 'semantic-ui-react';
 import image from '../../images/blured.jpg';
 import '../../App.css';
@@ -15,9 +13,6 @@ const AboutHolding = () => (
 				</div>
 			</div>
 		</Parallax>
-		{/* <div className='videoDiv' style={{ height: '400px', background: `url(${image})`, backgroundRepeat: 'no-repeat', backgroundPositionY: '14%', backgroundSize: 'cover', backgroundPositionX: 'center' }}>
-			<div className='shadowDiv'><h1 className='rotated' style={{ paddingTop: '0px' }}>REVES <div>HOLDING</div></h1></div>
-		</div> */}
 		<Grid>
 			<GridRow centered>
 				<GridColumn computer={4} tablet={7} mobile={14}>

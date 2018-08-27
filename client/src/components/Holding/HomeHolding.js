@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Grid, GridRow, GridColumn } from 'semantic-ui-react';
-import Sidebar from './Sidebar';
 import './styleHol.css';
 import finance from '../../images/finance.png';
 import commerce from '../../images/commerce.png';
@@ -36,14 +35,12 @@ class HomeHolding extends Component {
 		};
 		return (
 			<div>
-				{/* <Sidebar /> */}
-
 				<NavbarHol />
 				<Grid>
 					<GridRow centered>
 						<GridColumn width={16}>
 							<div style={{ position: 'fixed', width: '100%' }}>
-								<div className='videoDiv'>
+								<div className='videoDiv imgHol'>
 									<div className='shadowDiv'><h1>OUR SECRET OF SUCCESS IS <br /><span>ENTHUSIASM</span></h1></div>
 									<video className='videoCover' autoPlay loop src={movie}>
 									</video>
@@ -93,7 +90,7 @@ class HomeHolding extends Component {
 							</div>
 						</GridColumn>
 					</GridRow>
-					<h2 className='partnersH2'>WHAT OUR PARTNERS SAY ABOUT US</h2>
+					{/* <h2 className='partnersH2'>WHAT OUR PARTNERS SAY ABOUT US</h2>
 					<GridRow style={{ marginBottom: '65px' }} centered>
 						<GridColumn computer={8} mobile={12}>
 							<div style={{ textAlign: 'center' }}>
@@ -114,7 +111,7 @@ class HomeHolding extends Component {
 								</Slider>
 							</div>
 						</GridColumn>
-					</GridRow>
+					</GridRow> */}
 					<AboutHolding />
 					<Counter />
 					<Managment />

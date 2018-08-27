@@ -71,7 +71,7 @@ class Contact extends Component {
 		}
 		else {
 			this.setState({
-				serverMessage: 'Fill out all field correctlly!'
+				serverMessage: 'Fill out all fields correctlly!'
 			})
 		}
 	}
@@ -87,10 +87,9 @@ class Contact extends Component {
 
 
 	render() {
-		console.log('this.state :', this.state);
 		const { name, email, subject, message } = this.state
 		return (
-			<div style={{ paddingBottom: "20px", overflow: 'hidden', position: 'relative', background: 'white'}}>
+			<div style={{ paddingBottom: "20px", overflow: 'hidden', position: 'relative', background: 'white' }}>
 				<TrackVisibility once throttleInterval={800}>
 					{
 						({ isVisible }) => isVisible ?

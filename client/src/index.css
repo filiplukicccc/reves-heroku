@@ -30,7 +30,9 @@ a {
 /* .menuItem .item, .menuItem a {
   color: #b0b0b0!important;
 } */
-
+a:focus {
+  outline: none!important;
+}
 a .active.item  {
   color: #003571!important;
 }
@@ -60,6 +62,21 @@ a .active.item  {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.imgHome {
+  background-image: url('./images/Ferris-wheel.jpg');
+}
+.imgTech {
+  background-image: url('./images/Love-Coding.jpg');
+}
+.imgHol {
+  background-image: url('./images/City-Nights.jpg');
+} 
+.imgAfr {
+  background-image: url('./images/line.png');
 }
 .videoCover {
   position: absolute;
@@ -102,8 +119,12 @@ a .active.item  {
 .managmentWrap {
   padding-top: 70px;
 }
-.managmentWrap h2 {
+.managmentWrap h2, .contactH2Gr {
   margin-top: 0px!important;
+}
+.peoples {
+  margin: 0px 1px!important;
+  margin-top: 30px!important;
 }
 @media only screen and (max-width: 1300px) {
   .menuItem {

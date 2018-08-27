@@ -87,7 +87,6 @@ class Contact extends Component {
 
 
 	render() {
-		console.log('this.state :', this.state);
 		const { name, email, subject, message } = this.state
 		return (
 			<div style={{ paddingBottom: "20px", overflow: 'hidden', position: 'relative', background: 'white' }}>
@@ -155,7 +154,7 @@ class Contact extends Component {
 															</Dimmer>
 														</div>
 													</div>
-													<div>
+													<div style={{ marginBottom: '50px' }}>
 														<Button className='sendButton' >Send</Button>
 													</div>
 												</Form>
@@ -167,9 +166,9 @@ class Contact extends Component {
 						</Grid.Column>
 					</Grid.Row>
 				</Grid>
-				<div>
+				{/* <div>
 					<p style={{ marginTop: "80px", textAlign: "center", fontSize: '14px', color: '#003571' }}>© Reves Technologies 2018 | All right reserved</p>
-				</div>
+				</div> */}
 			</div>
 		)
 	}

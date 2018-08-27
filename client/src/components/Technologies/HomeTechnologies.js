@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import AboutTechnologies from './AboutTechnologies';
 import ContactTechnologies from './ContactTechnologies';
 import TeamTechnologies from './TeamTechnologies';
-import SidebarTech from './Sidebar';
-import { Grid, GridRow } from 'semantic-ui-react';
-import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
 import '../../index.css';
 import './styleTech.css';
@@ -13,6 +10,7 @@ import Video from './Video';
 import Services from './Services';
 import Clients from './Clients';
 import Counter from './Counter';
+import Footer from './Footer';
 
 
 configureAnchors({ offset: -60, scrollDuration: 800 })
@@ -34,6 +32,7 @@ class HomeTechnologies extends Component {
 				<TeamTechnologies />
 				<Counter />
 				<ContactTechnologies />
+				<Footer />
 			</div>
 		)
 	}

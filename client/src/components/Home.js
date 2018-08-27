@@ -4,13 +4,16 @@ import movie from '../images/Ferris-wheel.mp4';
 import '../index.css';
 import About from './About';
 import Managment from './Managment';
-import Contact from './Contact';
+// import Contact from './Contact';
+import ContactNew from './ContactNew';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
 import NavbarHome from './NavbarHome';
 import NavbarAbout from './NavbarAbout';
 import NavbarManagment from './NavbarManagment';
 import NavbarContact from './NavbarContact';
+import Counter from './Counter';
+import Footer from './Footer';
 
 
 configureAnchors({ offset: -60, scrollDuration: 800 })
@@ -36,8 +39,8 @@ class Home extends Component {
 							<GridRow centered>
 								<GridColumn width={16}>
 									<div style={{ position: 'fixed', width: '100%' }}>
-										<div className='videoDiv'>
-											<div className='shadowDiv'><h1>HOME REVES GROUP</h1></div>
+										<div className='videoDiv imgHome'>
+											<div className='shadowDiv'><h1 style={{ fontSize: '40px' }}>WELCOME TO <span style={{ fontSize: '60px', fontWeight: '400' }}>REVES GROUP</span></h1></div>
 											<video className='videoCover' autoPlay loop src={movie}>
 											</video>
 										</div>
@@ -48,12 +51,16 @@ class Home extends Component {
 						<ScrollableAnchor id={'about'}>
 							<About />
 						</ScrollableAnchor>
+						<Counter />
+
 						<ScrollableAnchor id={'managment'}>
 							<Managment />
 						</ScrollableAnchor>
 						<ScrollableAnchor id={'contact'}>
-							<Contact />
+							{/* <Contact /> */}
+							<ContactNew />
 						</ScrollableAnchor>
+						<Footer />
 					</div>
 				</div>
 			</div>

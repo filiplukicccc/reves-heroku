@@ -26,7 +26,7 @@ class Portfolio extends Component {
 							<Progress percent={90} content='Finance' color='green' progress />
 							<Progress percent={84} content='Commerce' color='blue' progress />
 							<Progress percent={78} content='Information Technology' color='orange' progress />
-							<Progress percent={74} content='Real Estate' color='red' progress />
+							<Progress percent={74} content='Gastronomy' color='red' progress />
 						</GridColumn>
 					</GridRow>
 				</Grid>

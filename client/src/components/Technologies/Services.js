@@ -39,7 +39,7 @@ class Services extends Component {
 				<Parallax bgImage={idea} strength={500} blur={{ min: -1, max: 3 }} style={{ minHeight: '780px' }}>
 					<div style={{ background: 'rgba(2,13,25,0.89)', padding: '50px 0 50px 0', minHeight: '780px' }}>
 						<div>
-							<h2 className='servicesTitle'>OUR&nbsp;&nbsp; <span style={{ color: '#003571' }}>SERVICES</span></h2>
+							<h2 className='servicesTitle'>OUR&nbsp;&nbsp; SERVICES</h2>
 							<p style={{ textAlign: 'center' }}>What we can offer you</p>
 							<div style={{ textAlign: 'center', paddingTop: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '50px' }}>
 								<span className='borderS'></span>

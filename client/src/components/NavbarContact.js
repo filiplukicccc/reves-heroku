@@ -38,7 +38,6 @@ class NavbarContact extends Component {
 		let log = window.location.href === 'http://localhost:3000/reves_technologies' ? logoTech : window.location.href === 'http://localhost:3000/reves_holding' ? logoHol : logo;
 		const { activeItem } = this.state;
 		const { visible } = this.state;
-		console.log('this.state :', this.state);
 		return (
 			<div>
 				<div className='navbarDiv'>
@@ -62,9 +61,9 @@ class NavbarContact extends Component {
 							<a href='/#home'><Menu.Item name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick}>Home</Menu.Item></a>
 							<a href='/#about'><Menu.Item name='About' active={activeItem === 'About'} onClick={this.handleItemClick}>About</Menu.Item></a>
 							<a href='/#managment'><Menu.Item name='Managment' active={activeItem === 'Managment'} onClick={this.handleItemClick} >Managment</Menu.Item></a>
-							<Link to='/reves_technologies' style={{ color: this.state.color }}><Menu.Item style={{ borderBottom: this.state.border, color: this.state.color }} name='Reves_technologies' active={activeItem === 'Reves_technologies'} onClick={this.border}>Reves Technologies</Menu.Item></Link>
-							<Link to='/reves_holding'><Menu.Item name='Reves_holding' active={activeItem === 'Reves_holding'} onClick={this.handleItemClick}>Reves Holding</Menu.Item></Link>
-							<Link to='/reves_holdings_africa'><Menu.Item name='Reves_holdings_africa' active={activeItem === 'Reves_holdings_africa'} onClick={this.handleItemClick}>Reves Holding Africa</Menu.Item></Link>
+							<Link to='/reves_holding'><Menu.Item name='Reves_holding' active={activeItem === 'Reves_holding'} onClick={this.handleItemClick}>REVES Holding</Menu.Item></Link>
+							<Link to='/reves_technologies' style={{ color: this.state.color }}><Menu.Item style={{ borderBottom: this.state.border, color: this.state.color }} name='Reves_technologies' active={activeItem === 'Reves_technologies'} onClick={this.border}>REVES Technologies</Menu.Item></Link>
+							<Link to='/reves_medical'><Menu.Item name='Reves_holdings_africa' active={activeItem === 'Reves_holdings_africa'} onClick={this.handleItemClick}>REVES Medical</Menu.Item></Link>
 							<a href='/#contact'><Menu.Item className={this.state.class} name='Contact' active={activeItem === 'Contact'} onClick={this.border}>Contact</Menu.Item></a>
 						</Menu>
 					</div>
@@ -74,9 +73,9 @@ class NavbarContact extends Component {
 								<a href='/#home'><Menu.Item name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick}>Home</Menu.Item></a>
 								<a href='/#about'><Menu.Item name='About' active={activeItem === 'About'} onClick={this.handleItemClick}>About</Menu.Item></a>
 								<a href='/#managment'><Menu.Item name='Managment' active={activeItem === 'Managment'} onClick={this.handleItemClick} >Managment</Menu.Item></a>
-								<Link to='/reves_technologies' style={{ color: this.state.color }}><Menu.Item style={{ borderBottom: this.state.border, color: this.state.color }} name='Reves_technologies' active={activeItem === 'Reves_technologies'} onClick={this.border}>Reves Technologies</Menu.Item></Link>
-								<Link to='/reves_holding'><Menu.Item name='Reves_holding' active={activeItem === 'Reves_holding'} onClick={this.handleItemClick}>Reves Holding</Menu.Item></Link>
-								<Link to='/reves_holdings_africa'><Menu.Item name='Reves_holdings_africa' active={activeItem === 'Reves_holdings_africa'} onClick={this.handleItemClick}>Reves Holding Africa</Menu.Item></Link>
+								<Link to='/reves_holding'><Menu.Item name='Reves_holding' active={activeItem === 'Reves_holding'} onClick={this.handleItemClick}>REVES Holding</Menu.Item></Link>
+								<Link to='/reves_technologies' style={{ color: this.state.color }}><Menu.Item style={{ borderBottom: this.state.border, color: this.state.color }} name='Reves_technologies' active={activeItem === 'Reves_technologies'} onClick={this.border}>REVES Technologies</Menu.Item></Link>
+								<Link to='/reves_medical'><Menu.Item name='Reves_holdings_africa' active={activeItem === 'Reves_holdings_africa'} onClick={this.handleItemClick}>REVES Medical</Menu.Item></Link>
 								<a href='/#contact'><Menu.Item className={this.state.class} name='Contact' active={activeItem === 'Contact'} onClick={this.border}>Contact</Menu.Item></a>
 							</Menu>
 						</div>

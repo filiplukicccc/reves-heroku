@@ -87,7 +87,6 @@ class Contact extends Component {
 
 
 	render() {
-		console.log('this.state :', this.state);
 		const { name, email, subject, message } = this.state
 		return (
 			<div style={{ paddingBottom: "20px", overflow: 'hidden', position: 'relative', background: 'white', minHeight: '950px' }}>
@@ -115,7 +114,7 @@ class Contact extends Component {
 									({ isVisible }) => isVisible ?
 										<StyleRoot>
 											<div style={styles.rotateInUpLeft}>
-												<div className='contact'>
+												<div style={{ marginTop: '100px' }} className='contact'>
 													<div className='contactDiv'>
 														<span style={{ color: '#003571' }}>ADDRESS</span><br />
 														<span style={{ color: '#414a4c' }}>REVES Technologies AG Sonnmattstrasse 2 9430<br /> St.Margarethen SG Switzerland</span>

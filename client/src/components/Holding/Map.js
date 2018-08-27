@@ -7,8 +7,8 @@ class Mapa extends Component {
 			<div>
 				<Map google={this.props.google}
 					initialCenter={{
-						lat: 44.773770,
-						lng: 20.417285
+						lat: 44.871890,
+						lng: 20.197100
 					}}
 					zoom={15}
 					style={{ height: '700px' }}
