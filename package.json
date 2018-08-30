@@ -4,23 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "concurrently \"npm run server\" \"npm run client\" \"node index.js\"",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"node index.js\"",
+    "build": "concurrently \"npm run server\" \"npm run client\" \"node index.js\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/filiplukicccc/reves-backup.git"
+    "url": "git+https://github.com/filiplukicccc/reves-heroku.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/filiplukicccc/reves-backup/issues"
+    "url": "https://github.com/filiplukicccc/reves-heroku/issues"
   },
-  "homepage": "https://github.com/filiplukicccc/reves-backup#readme",
+  "homepage": "https://github.com/filiplukicccc/reves-heroku#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "concurrently": "^3.6.1",
