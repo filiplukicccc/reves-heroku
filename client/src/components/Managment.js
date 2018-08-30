@@ -8,7 +8,10 @@ import alex from '../images/F1.jpg'
 import Profiles from './Profiles';
 
 
+
+
 class Managment extends Component {
+
 	render() {
 		let arr = [
 			{
@@ -53,7 +56,7 @@ class Managment extends Component {
 				<Profiles item={people} />
 			)
 		})
-		console.log('this.state :', this.state);
+
 		return (
 			<div className='managmentWrap' style={{ position: 'relative', background: 'white' }}>
 				<h2 style={{ marginBottom: '25px' }}>MANAGMENT</h2>
